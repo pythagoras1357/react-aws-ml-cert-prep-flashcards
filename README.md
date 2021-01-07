@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Based on [React-Flashcard-App](https://github.com/WebDevSimplified/React-Flashcard-App).
 
-content inspired by this [Udemy Course](https://www.udemy.com/course/aws-machine-learning/)
+content inspired by [Udemy Course](https://www.udemy.com/course/aws-machine-learning/), AWS docs and Google.
 
 ## Available Scripts
 

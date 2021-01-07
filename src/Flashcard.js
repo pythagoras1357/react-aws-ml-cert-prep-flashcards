@@ -17,9 +17,15 @@ export default function Flashcard({ flashcard }) {
   function checkAnswer(a) {
     //console.log("your answer: " , a.option)
     //console.log("correct answer: " + flashcard.answer)
-    flashcard.answer === a.option ? alert("yep, that's correct!") : alert("nope, that's incorrect")
+   /* if(flashcard.answer === a.option){
+      addCorrectAnswer(correctAnswers.push(a))
+    }
+    else{
+      alert("nope, that's incorrect")
+    }*/
+    //onCorrectAnswer(a)
+    flashcard.answer === a.option ? alert("yep, that's correct") : alert("nope, that's incorrect")
   }
-
   useEffect(setMaxHeight, [flashcard.question, flashcard.answer, flashcard.options])
   // this is messing things up! commenting
   /*useEffect(() => {
