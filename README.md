@@ -1,6 +1,6 @@
 ## Overview
 
-A very simple react flashcard-style app made to personally prepare for the [AWS ML Specialty Certification exam].
+A very simple react flashcard-style app made to personally prepare for the [AWS ML Specialty Certification exam](https://aws.amazon.com/certification/certified-machine-learning-specialty/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
