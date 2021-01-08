@@ -13,5 +13,5 @@ export const triviaCategories = [
 	},
 	{
 		"id": 3,
-		"name": "AWS Relevant tools/services: Purpose (e.g. ETL)"
+		"name": "AWS Relevant tools/services"
 	}]

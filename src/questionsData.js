@@ -22,6 +22,13 @@ let sagemakerAlgorithms = [
     {"name" : "Reinforcement Learning", "modelType":"Q-learning" , "purpose": "learning by assigning rewards/penalties for states in the system", "processor" : "cpu or gpu"}
 ]
 
+let awsServices = [
+    {"name" : "S3", "type":"storage" , "purpose": "Amazon S3 allows people to store objects (files) in 'buckets' (directories). Buckets must have a globally unique name. Objects (files) have a Key. The key is the full path"},
+    {"name" : "Kinesis", "type":"streaming" , "purpose": "Kinesis is a managed alternative to Apache Kafka. Great for application logs, metrics, IoT, clickstreams. Great for “real-time” big data"},
+    {"name" : "Glue ETL", "type":"ETL" , "purpose": "Transform data, Clean Data, Enrich Data (before doing analysis).  Target can be S3, JDBC (RDS, Redshift), or in Glue Data Catalog. Jobs are run on a serverless Spark platform"},
+    {"name" : "Glue Data Catalogue", "type":"Metadata repository" , "purpose": "Metadata repository for all your tables. Automated Schema Inference. Schemas are versioned"}
+]
+
 let generalAnswers = [
     "Standard deviation (represented by the symbol sigma, σ ) shows how much variation or dispersion exists from the average (mean), or expected value. More precisely, it is a measure of the average distance between the values of the data in the set and the mean.",
     "Delete records with missing values, Mean imputation, KNN: Find K “nearest” (most similar) rows and average their values, Deep Learning: Build a machine learning model to impute data for your machine learning model, Regression: Find linear or non-linear relationships between the missing feature and other features, Just Get More Data",
@@ -112,10 +119,10 @@ function getModelPurposeQuestion(str){
     return "What is the purpose of " + str + "?"
 }
 
-function getArrayExcludeOne (array,notThis){
-    let arr =  array.filter(e => e !== notThis);
-    return arr
+function getServiceQuestion(str){
+    return "What is the purpose of " + str + "?"
 }
+
 
 function getSubsetArrayExcludeOne(array,notThis,subset){
 
@@ -153,6 +160,17 @@ generalQuestions.forEach((element) => {
             "hide":true,
             "correct_answer": element.answer,
             incorrect_answers: getSubsetArrayExcludeOne(generalAnswers,element.answer,subsetSize)
+        }
+    )
+})
+awsServices.forEach((element) => {
+    questions.push(
+        {
+            "categoryId": 3,
+            "question" : getServiceQuestion(element.name),
+            "hide":true,
+            "correct_answer": element.purpose,
+            incorrect_answers: []
         }
     )
 })

@@ -11,7 +11,7 @@ export default function Flashcard({ flashcard }) {
     const frontHeight = frontEl.current.getBoundingClientRect().height
     const backHeight = backEl.current.getBoundingClientRect().height
     //console.log("setMaxHeight" + frontHeight + " : " + backHeight)
-    setHeight(Math.max(frontHeight, backHeight, 100))
+    setHeight(Math.max(frontHeight, backHeight))
   }
 
   function checkAnswer(a) {
@@ -47,7 +47,7 @@ export default function Flashcard({ flashcard }) {
             </div>
           })}
         </div>
-        <button className="btn view-btn" onClick={() => setFlip(!flip)} >see answer</button>
+        <button className={`btn view-btn ${flip ? 'flip' : ''}`} onClick={() => setFlip(!flip)} >see answer</button>
       </div>
       <div className="back" onClick={() => setFlip(!flip)} style={{ height: height + 6 }} ref={backEl}>{flashcard.answer}</div>
     </div>
