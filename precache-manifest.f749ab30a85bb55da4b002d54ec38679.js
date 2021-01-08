@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2c0047fdad06007adc2891737d0985b",
+    "revision": "5a7070924dc609b33860f9d01443a338",
     "url": "/react-aws-ml-cert-prep-flashcards/index.html"
   },
   {
-    "revision": "8c2a786a4c2b10f6be12",
+    "revision": "e0e591d75a4e80cbb485",
     "url": "/react-aws-ml-cert-prep-flashcards/static/css/main.e9b3050e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-aws-ml-cert-prep-flashcards/static/js/2.e08e1eb5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8c2a786a4c2b10f6be12",
-    "url": "/react-aws-ml-cert-prep-flashcards/static/js/main.f466d661.chunk.js"
+    "revision": "e0e591d75a4e80cbb485",
+    "url": "/react-aws-ml-cert-prep-flashcards/static/js/main.f8925f08.chunk.js"
   },
   {
     "revision": "134a5c89b51a3f4e0a0b",
