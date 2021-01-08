@@ -26,9 +26,11 @@ let awsServices = [
     {"name" : "S3", "type":"storage" , "purpose": "Amazon S3 allows people to store objects (files) in 'buckets' (directories). Buckets must have a globally unique name. Objects (files) have a Key. The key is the full path"},
     {"name" : "Kinesis", "type":"streaming" , "purpose": "Kinesis is a managed alternative to Apache Kafka. Great for application logs, metrics, IoT, clickstreams. Great for “real-time” big data"},
     {"name" : "Glue ETL", "type":"ETL" , "purpose": "Transform data, Clean Data, Enrich Data (before doing analysis).  Target can be S3, JDBC (RDS, Redshift), or in Glue Data Catalog. Jobs are run on a serverless Spark platform"},
-    {"name" : "Glue Data Catalogue", "type":"Metadata repository" , "purpose": "Metadata repository for all your tables. Automated Schema Inference. Schemas are versioned"}
+    {"name" : "Glue Data Catalogue", "type":"Metadata repository" , "purpose": "Metadata repository for all your tables. Automated Schema Inference. Schemas are versioned"},
+    {"name" : "DynamoDB", "type":"storage" , "purpose": "Amazon DynamoDB is a fully managed proprietary NoSQL database service that supports key-value and document data structures"},
+    {"name" : "AWS Data Pipeline", "type":"data pipeline" , "purpose": "Process and move data between different AWS compute and storage services such as Amazon S3, Amazon RDS, Amazon DynamoDB, and Amazon EMR."},
 ]
-
+ 
 let generalAnswers = [
     "Standard deviation (represented by the symbol sigma, σ ) shows how much variation or dispersion exists from the average (mean), or expected value. More precisely, it is a measure of the average distance between the values of the data in the set and the mean.",
     "Delete records with missing values, Mean imputation, KNN: Find K “nearest” (most similar) rows and average their values, Deep Learning: Build a machine learning model to impute data for your machine learning model, Regression: Find linear or non-linear relationships between the missing feature and other features, Just Get More Data",
@@ -136,6 +138,7 @@ export function createQuestions(){
 questions = []
 sagemakerAlgorithms = shuffle(sagemakerAlgorithms) 
 generalQuestions = shuffle(generalQuestions)
+awsServices = shuffle(awsServices)
 sagemakerAlgorithms.forEach((element) => {
     questions.push(
         {
