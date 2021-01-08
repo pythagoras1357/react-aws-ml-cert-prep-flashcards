@@ -8,6 +8,10 @@ export const triviaCategories = [
 		"name": "SageMaker Algorithms: Model Type (e.g. CNN)"
 	},
 	{
-		"id": 3,
+		"id": 4,
 		"name": "General Machine Learning"
+	},
+	{
+		"id": 3,
+		"name": "AWS Relevant tools/services: Purpose (e.g. ETL)"
 	}]

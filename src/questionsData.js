@@ -29,7 +29,9 @@ let generalAnswers = [
     "Stands for Term Frequency and Inverse Document Frequency. Term Frequency measures how often a word occurs in a document. Document Frequency is how often a word occurs in an entire set of documents, i.e., all of Wikipedia or every web page. TF-IDF measures the relevancy of a word in a document",
     "Regularization techniques are intended to prevent overfitting. Some techniques are Dropout (removing neurons from some layers) and Early Stopping -  Early stopping rules provide guidance as to how many iterations can be run before the learner begins to over-fit",
     "R-squared is a statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression.",
-    "L1 and L2 are two loss functions in machine learning which are used to minimize the error. L1 Loss function stands for Least Absolute Deviations. Also known as LAD. L2 Loss function stands for Least Square Errors. Also known as LS."
+    "L1 and L2 are two loss functions in machine learning which are used to minimize the error. L1 Loss function stands for Least Absolute Deviations. Also known as LAD. L2 Loss function stands for Least Square Errors. Also known as LS.",
+    "(True Positives / True Positives + False Negatives) AKA Sensitivity, True Positive rate, Completeness. Percent of positives rightly predicted, good choice of metric when you care a lot about false negatives",
+    "(True Positives / True Positives + False Positives) AKA Correct Positives. Percent of relevant results, Good choice of metric when you care a lot about false positives"
 ]
 
 let generalQuestions = [
@@ -39,8 +41,12 @@ let generalQuestions = [
     {"question":"What is TF-IDF", "answer":generalAnswers[3]},
     {"question":" What is regularization? And what are some techniques?", "answer":generalAnswers[4]},
     {"question":"what is R2 in machine learning?", "answer":generalAnswers[5]},
-    {"question":"what are L1 and L2 in machine learning?", "answer":generalAnswers[6]}    
+    {"question":"what are L1 and L2 in machine learning?", "answer":generalAnswers[6]},   
+    {"question":"what is Recall?", "answer":generalAnswers[7]},
+    {"question":"what is Precision?", "answer":generalAnswers[8]} 
 ]
+
+
 
 const processors = [
     "cpu",
@@ -142,7 +148,7 @@ sagemakerAlgorithms.forEach((element) => {
 generalQuestions.forEach((element) => {
     questions.push(
         {
-            "categoryId": 3,
+            "categoryId": 4,
             "question" : element.question,
             "hide":true,
             "correct_answer": element.answer,
