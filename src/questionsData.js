@@ -29,8 +29,16 @@ let awsServices = [
     {"name" : "Glue Data Catalogue", "type":"Metadata repository" , "purpose": "Metadata repository for all your tables. Automated Schema Inference. Schemas are versioned"},
     {"name" : "DynamoDB", "type":"storage" , "purpose": "Amazon DynamoDB is a fully managed proprietary NoSQL database service that supports key-value and document data structures"},
     {"name" : "AWS Data Pipeline", "type":"data pipeline" , "purpose": "Process and move data between different AWS compute and storage services such as Amazon S3, Amazon RDS, Amazon DynamoDB, and Amazon EMR."},
+    {"name" : "AWS Batch", "type":"data pipeline" , "purpose": "Run batch jobs as Docker images. Dynamic provisioning of the instances (EC2 & Spot Instances)"},
+    {"name" : "AWS DMS", "type":"data pipeline" , "purpose": "Database Migration Service helps you migrate databases to AWS quickly and securely. The source database remains fully operational during the migration, minimizing downtime to applications that rely on the database."},
+    {"name" : "Step Functions", "type":"data pipeline" , "purpose": "Serverless function orchestrator that makes it easy to sequence AWS Lambda functions and multiple AWS services into business-critical applications."},
+    {"name" : "Polly", "type":"data pipeline" , "purpose": "converts text into spoken audio. It allows developers to create speech-enabled applications and products."},
+    {"name" : "Rekognition", "type":"data pipeline" , "purpose": "Fast and accurate face search, allowing you to identify a person in a photo or video"},
+    {"name" : "Transcribe", "type":"data pipeline" , "purpose": "Speech-to-text. Automatic speech recognition (ASR)"},
+    {"name" : "Lex", "type":"data pipeline" , "purpose": "Chatbot"}
+
 ]
- 
+
 let generalAnswers = [
     "Standard deviation (represented by the symbol sigma, σ ) shows how much variation or dispersion exists from the average (mean), or expected value. More precisely, it is a measure of the average distance between the values of the data in the set and the mean.",
     "Delete records with missing values, Mean imputation, KNN: Find K “nearest” (most similar) rows and average their values, Deep Learning: Build a machine learning model to impute data for your machine learning model, Regression: Find linear or non-linear relationships between the missing feature and other features, Just Get More Data",
