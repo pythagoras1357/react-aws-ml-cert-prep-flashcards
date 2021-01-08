@@ -36,7 +36,13 @@ let awsServices = [
     {"name" : "Rekognition",  "purpose": "Fast and accurate face search, allowing you to identify a person in a photo or video"},
     {"name" : "Transcribe",  "purpose": "Speech-to-text. Automatic speech recognition (ASR)"},
     {"name" : "Lex",  "purpose": "Chatbot"},
-    {"name" : "Comprehend",  "purpose": "Natural language processing (NLP) service that uses machine learning to find insights and relationships in text."}
+    {"name" : "Comprehend",  "purpose": "Natural language processing (NLP) service that uses machine learning to find insights and relationships in text."},
+    {"name" : "CloudTrail",  "purpose": "CloudTrail records actions from users, roles, and services within SageMaker. Audit trail of what every one did"},
+    {"name" : "CloudWatch",  "purpose": "Cloud watch monitoring log data, issues alarms when things go wrong."},
+    {"name" : "Elastic Inference",  "purpose": "Accelerated deep learning inference more cost effectively than dedicated GPU instance. When you deploy your inference model, will deploy to a CPU instance, but also specify an elastic inference accelerator along side with it. Can excelerate notebooks as well. Only works with deep learning. (Tensorflow/MXnet). Works with Image classification, Object detection build in algorithms."}
+
+    
+    
 ]
 
 let generalAnswers = [
