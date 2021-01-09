@@ -43,11 +43,11 @@ export default function Flashcard({ flashcard }) {
         <div className="flashcard-options">
           {flashcard.options.map(option => {
             return <div className="flashcard-option" key={option}>
-            <button className="btn option-btn" onClick={() => checkAnswer({option})}>{option}</button>
+            <button className="btn option-btn btn-primary" onClick={() => checkAnswer({option})}>{option}</button>
             </div>
           })}
         </div>
-        <button className={`btn view-btn ${flip ? 'flip' : ''}`} onClick={() => setFlip(!flip)} >see answer</button>
+        <button className={`btn view-btn btn-success ${flip ? 'flip' : ''}`} onClick={() => setFlip(!flip)} >see answer</button>
       </div>
       <div className="back" onClick={() => setFlip(!flip)} style={{ height: height + 6 }} ref={backEl}>{flashcard.answer}</div>
     </div>

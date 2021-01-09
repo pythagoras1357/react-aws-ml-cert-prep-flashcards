@@ -49,12 +49,14 @@ let generalAnswers = [
     "Standard deviation (represented by the symbol sigma, σ ) shows how much variation or dispersion exists from the average (mean), or expected value. More precisely, it is a measure of the average distance between the values of the data in the set and the mean.",
     "Delete records with missing values, Mean imputation, KNN: Find K “nearest” (most similar) rows and average their values, Deep Learning: Build a machine learning model to impute data for your machine learning model, Regression: Find linear or non-linear relationships between the missing feature and other features, Just Get More Data",
     "Oversampling - duplicate samples from the minority class, Undersampling - instead of creating more positive samples, remove negative ones, Throwing data away is usually not the right answer, SMOTE (Synthetic Minority Over-sampling TEchnique) - Artificially generate new samples of the minority class using nearest neighbors, Adjusting thresholds",
-    "Stands for Term Frequency and Inverse Document Frequency. Term Frequency measures how often a word occurs in a document. Document Frequency is how often a word occurs in an entire set of documents, i.e., all of Wikipedia or every web page. TF-IDF measures the relevancy of a word in a document",
+    "Stands for Term Frequency and Inverse Document Frequency. Term Frequency measures how often a word occurs in a document. Document Frequency is how often a word occurs in an entire set of documents, i.e., all of Wikipedia or every web page. TF-IDF measures the relevancy of a word in a document. TF = (Number of time the word occurs in the text) / (Total number of words in text). IDF = (Total number of documents / Number of documents with word t in it) TF-IDF = TF * IDF",
     "Regularization techniques are intended to prevent overfitting. Some techniques are Dropout (removing neurons from some layers) and Early Stopping -  Early stopping rules provide guidance as to how many iterations can be run before the learner begins to over-fit",
     "R-squared is a statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression.",
     "L1 and L2 are two loss functions in machine learning which are used to minimize the error. L1 Loss function stands for Least Absolute Deviations. Also known as LAD. L2 Loss function stands for Least Square Errors. Also known as LS.",
     "(True Positives / True Positives + False Negatives) AKA Sensitivity, True Positive rate, Completeness. Percent of positives rightly predicted, good choice of metric when you care a lot about false negatives",
-    "(True Positives / True Positives + False Positives) AKA Correct Positives. Percent of relevant results, Good choice of metric when you care a lot about false positives"
+    "(True Positives / True Positives + False Positives) AKA Correct Positives. Percent of relevant results, Good choice of metric when you care a lot about false positives",
+    "confusion matrix is...",
+    "The easy way to determine what the tf-idf in vectorized format is, is by using the following: (number of documents, number of unique n-grams)"
 ]
 
 let generalQuestions = [
@@ -66,7 +68,9 @@ let generalQuestions = [
     {"question":"what is R2 in machine learning?", "answer":generalAnswers[5]},
     {"question":"what are L1 and L2 in machine learning?", "answer":generalAnswers[6]},   
     {"question":"what is Recall?", "answer":generalAnswers[7]},
-    {"question":"what is Precision?", "answer":generalAnswers[8]} 
+    {"question":"what is Precision?", "answer":generalAnswers[8]},
+    {"question":"what is a confusion matrix?", "answer":generalAnswers[9]} ,
+    {"question":"How do you calculate the TF-IDF matrix for a given set of documents?", "answer":generalAnswers[10]} 
 ]
 
 
