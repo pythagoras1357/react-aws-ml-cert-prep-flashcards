@@ -12,8 +12,8 @@ let sagemakerAlgorithms = [
     {"name" : "Image Classification", "modelType":"ResNet CNN" , "purpose": "assign labels to image", "processor" : "gpu"},
     {"name" : "Semantic Segmentation", "modelType":"MXNet Gluon and Gluon CV" , "purpose": "pixel level object classification", "processor" : "gpu"},
     {"name" : "Random Cut Forest", "modelType":"decision tree(s)" , "purpose": "anomaly detection", "processor" : "cpu"},
-    {"name" : "Neural Topic Model", "modelType":"neural topic model" , "purpose": "document topic classification", "processor" : "gpu"},
-    {"name" : "LDA: Latent Dirichlet Allocation", "modelType":"latent dirichlet allocation" , "purpose": "document topic classification", "processor" : "gpu"},
+    {"name" : "Neural Topic Model", "modelType":"neural topic model" , "purpose": "document topic modelling/classification", "processor" : "gpu"},
+    {"name" : "LDA: Latent Dirichlet Allocation", "modelType":"latent dirichlet allocation" , "purpose": "document topic modelling/classification", "processor" : "gpu"},
     {"name" : "K-Nearest-Neighbors", "modelType":"KNN" , "purpose": "regression or classification", "processor" : "cpu or gpu"},
     {"name" : "K-Means Clustering", "modelType":"k-Means" , "purpose": "unsupervised clustering", "processor" : "cpu"},
     {"name" : "Principal Component Analysis (PCA)", "modelType":"principal component analysis" , "purpose": "dimensionality reduction", "processor" : "cpu"},
@@ -39,10 +39,14 @@ let awsServices = [
     {"name" : "Comprehend",  "purpose": "Natural language processing (NLP) service that uses machine learning to find insights and relationships in text."},
     {"name" : "CloudTrail",  "purpose": "CloudTrail records actions from users, roles, and services within SageMaker. Audit trail of what every one did"},
     {"name" : "CloudWatch",  "purpose": "Cloud watch monitoring log data, issues alarms when things go wrong."},
-    {"name" : "Elastic Inference",  "purpose": "Accelerated deep learning inference more cost effectively than dedicated GPU instance. When you deploy your inference model, will deploy to a CPU instance, but also specify an elastic inference accelerator along side with it. Can excelerate notebooks as well. Only works with deep learning. (Tensorflow/MXnet). Works with Image classification, Object detection build in algorithms."}
+    {"name" : "Elastic Inference",  "purpose": "Accelerated deep learning inference more cost effectively than dedicated GPU instance. When you deploy your inference model, will deploy to a CPU instance, but also specify an elastic inference accelerator along side with it. Can excelerate notebooks as well. Only works with deep learning. (Tensorflow/MXnet). Works with Image classification, Object detection build in algorithms."},
+    {"name" : "Neo",  "purpose": "Neo makes it easy to prepare your model for deployment on virtually any hardware platforms"},
+    {"name" : "IoT green grass",  "purpose": " Internet of Things (IoT) edge runtime and cloud service that helps you build, deploy, and manage device software"},  
+    {"name" : "Ground Truth",  "purpose": "fully managed data labeling service that makes it easy to build highly accurate training datasets for machine learning"},
+    {"name" : "Kinesis Firehose",  "purpose": "reliably load, transform, and deliver streaming datastreaming data into data lakes, data stores, and analytics services."},
+    {"name" : "foo",  "purpose": "bar"} 
 
-    
-    
+//{"name" : "",  "purpose": ""}  
 ]
 
 let generalAnswers = [
@@ -69,7 +73,7 @@ let generalQuestions = [
     {"question":"what are L1 and L2 in machine learning?", "answer":generalAnswers[6]},   
     {"question":"what is Recall?", "answer":generalAnswers[7]},
     {"question":"what is Precision?", "answer":generalAnswers[8]},
-    {"question":"what is a confusion matrix?", "answer":generalAnswers[9]} ,
+  //  {"question":"what is a confusion matrix?", "answer":generalAnswers[9]} ,
     {"question":"How do you calculate the TF-IDF matrix for a given set of documents?", "answer":generalAnswers[10]} 
 ]
 
@@ -108,14 +112,14 @@ const modelPurposes = [
     "classification",
     "regression or classification",
     "translation, summarization, speech to text",
-    "forecast time series",
+   // "forecast time series",
     "text classification",
     "determine how similar objects are to each other",
     "identify object in image and identify bounding boxes",
     "assign labels to image",
     "pixel level object classification",
     "anomaly detection",
-    "document topic classification",
+    "document topic modelling/classification",
     "unsupervised clustering",
     "dimensionality reduction",
     "recommender systems",

@@ -63,6 +63,7 @@ h2 {
 }
 
 .btn {
+	font-size: 1rem;
 	background-color: hsl(200, 100%, 50%);
 	color: white;
 	padding: 0.5em 1em;
