@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-aws-ml-cert-prep-flashcards/precache-manifest.3fcd2b5bd2a0881bbbd8bdd71974080f.js"
+  "/react-aws-ml-cert-prep-flashcards/precache-manifest.96aca623bfbb631cd90f96bf21b8f745.js"
 );
 
 self.addEventListener('message', (event) => {
