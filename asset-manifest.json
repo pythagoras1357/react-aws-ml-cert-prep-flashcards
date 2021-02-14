@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-aws-ml-cert-prep-flashcards/static/css/main.151f8683.chunk.css",
-    "main.js": "/react-aws-ml-cert-prep-flashcards/static/js/main.7c18993f.chunk.js",
-    "main.js.map": "/react-aws-ml-cert-prep-flashcards/static/js/main.7c18993f.chunk.js.map",
+    "main.js": "/react-aws-ml-cert-prep-flashcards/static/js/main.86484a87.chunk.js",
+    "main.js.map": "/react-aws-ml-cert-prep-flashcards/static/js/main.86484a87.chunk.js.map",
     "runtime-main.js": "/react-aws-ml-cert-prep-flashcards/static/js/runtime-main.99b28704.js",
     "runtime-main.js.map": "/react-aws-ml-cert-prep-flashcards/static/js/runtime-main.99b28704.js.map",
     "static/js/2.e08e1eb5.chunk.js": "/react-aws-ml-cert-prep-flashcards/static/js/2.e08e1eb5.chunk.js",
     "static/js/2.e08e1eb5.chunk.js.map": "/react-aws-ml-cert-prep-flashcards/static/js/2.e08e1eb5.chunk.js.map",
     "index.html": "/react-aws-ml-cert-prep-flashcards/index.html",
-    "precache-manifest.fbc873aea11415a0d4d5ec953ef09ee2.js": "/react-aws-ml-cert-prep-flashcards/precache-manifest.fbc873aea11415a0d4d5ec953ef09ee2.js",
+    "precache-manifest.9d1ab0f3d0973ec04d47a0c149a7bb58.js": "/react-aws-ml-cert-prep-flashcards/precache-manifest.9d1ab0f3d0973ec04d47a0c149a7bb58.js",
     "service-worker.js": "/react-aws-ml-cert-prep-flashcards/service-worker.js",
     "static/css/main.151f8683.chunk.css.map": "/react-aws-ml-cert-prep-flashcards/static/css/main.151f8683.chunk.css.map",
     "static/js/2.e08e1eb5.chunk.js.LICENSE.txt": "/react-aws-ml-cert-prep-flashcards/static/js/2.e08e1eb5.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.99b28704.js",
     "static/js/2.e08e1eb5.chunk.js",
     "static/css/main.151f8683.chunk.css",
-    "static/js/main.7c18993f.chunk.js"
+    "static/js/main.86484a87.chunk.js"
   ]
 }
